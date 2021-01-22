@@ -1,0 +1,18 @@
+/*  */
+
+.a-gridlist {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 24rpx 0 16rpx 0; */
+  /* background-color: white; */
+}
+
+.a-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.a-column {
+  display: flex;
+  flex-direction: column;
+}

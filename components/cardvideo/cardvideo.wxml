@@ -1,0 +1,5 @@
+<!--components/cardvideo/cardvideo.wxml-->
+<view class="v-item-layout" hover-class="v-img-hover">
+	<image style="width: 100%; height: 100%; border-radius: 6rpx;" mode="aspectFill" src="https://cn.bing.com/th?id=OHR.DogDays_ZH-CN8013834742_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4" />
+	<view class="v-item-collect">赞12</view>
+</view>

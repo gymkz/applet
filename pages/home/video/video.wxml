@@ -1,0 +1,28 @@
+<!--pages/home/video/video.wxml-->
+<view class="container">
+	<!-- <header title="" fixed="{{false}}" background="#00000000" /> -->
+	<video style="width: 100%; height: 100%" />
+	<cover-view class="video-box">
+		<cover-view class="back-box" bindtap="onBack">
+			<cover-image class="back-icon"/>
+		</cover-view>
+		<cover-view class="info-layout">
+			<cover-image class="user-icon" />
+			<cover-view class="video-desc">简介看见你空间啊看见简介看见你空间啊看见那是奶奶家那是奶奶家</cover-view>
+		</cover-view>
+		<cover-view class="box-layout">
+			<cover-view class="box-view">
+				<image class="box-icon" />
+				<cover-view class="box-text">13</cover-view>
+			</cover-view>
+			<cover-view class="box-view">
+				<image class="box-icon" />
+				<cover-view class="box-text">13</cover-view>
+			</cover-view>
+			<cover-view class="box-view">
+				<image class="box-icon" />
+				<cover-view class="box-text">13</cover-view>
+			</cover-view>
+		</cover-view>
+	</cover-view>
+</view>

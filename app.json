@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/my/info/info",
+    "pages/publish/publish",
+    "pages/my/my",
+    "pages/home/video/video",
+    "pages/home/play/play",
+    "pages/home/topic/topic",
+    "pages/home/assemble/assemble",
+    "pages/home/activity/activity"
+  ],
+  "tabBar": {
+    "color": "#878787",
+    "selectedColor": "#232323",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "随拍",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "header": "/weui/header/header"
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "downloadFile": 30000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于小程序推荐附加使用"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

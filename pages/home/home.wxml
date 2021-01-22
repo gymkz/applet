@@ -1,0 +1,30 @@
+<!--pages/home/home.wxml-->
+<view class="h-container">
+	<header back="{{false}}" />
+	<!-- tab 关注 推荐 各类。。。 -->
+	<view class="tab-box">
+		<block wx:for="{{tabList}}" wx:key="index">
+			<view class="tab-view{{index === tabIndex ? '': '2'}}" hover-class="tab-hover" bindtap="onChangeTab" data-index="{{index}}">{{item}}</view>
+		</block>
+	</view>
+	<!-- 横项滑动话题，对应上面的分类 -->
+	<scroll-view class="scroll-box" scroll-x="{{true}}" enable-flex="{{true}}">
+    <block wx:for="123467890" wx:key="index">
+      <view class="huati-box" hover-class="img-hover" bindtap="onPressHuati">
+        <image class="huati-img" mode="aspectFill" src="https://cn.bing.com/th?id=OHR.NorfolkPups_ZH-CN0794024596_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4"/>
+        <view class="huati-mark">#话题</view>
+      </view>
+    </block>
+  </scroll-view>
+	<!-- 内容列表 -->
+	<view class="a-gridlist">
+    <block wx:for="12345678" wx:key="index">
+      <view class="item-box" bindtap="onPressItem">
+        <view class="item-layout" hover-class="img-hover">
+          <image style="width: 100%; height: 100%; border-radius: 6rpx;" mode="aspectFill" src="https://cn.bing.com/th?id=OHR.DogDays_ZH-CN8013834742_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4"/>
+          <view class="item-collect">赞12</view>
+        </view>
+      </view>
+    </block>
+	</view>
+</view>

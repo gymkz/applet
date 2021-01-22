@@ -1,0 +1,14 @@
+<!--pages/circle/circle.wxml-->
+<view>
+  <header back="{{false}}"/>
+<!-- tab 关注 推荐 各类。。。 -->
+  <view>
+  asd
+  </view>
+  <!-- 横项滑动话题，对应上面的分类 -->
+  <view>
+  </view>
+  <!-- 内容列表 -->
+  <view>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+<!--pages/my/my.wxml-->
+<view class="m-container">
+	<!-- <header back="{{false}}"/> -->
+	<!-- 顶部栏 -->
+	<image class="top-bg" mode="aspectFill" src="https://cn.bing.com/th?id=OHR.DogDays_ZH-CN8013834742_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4" />
+	<view class="top-layout">
+		<view class="user-box" hover-class="a-hover" bindtap="onTabPress">
+			<image class="user-icon" src="https://cn.bing.com/th?id=OHR.NorfolkPups_ZH-CN0794024596_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4" />
+			<view style="flex: 1">
+				<view class="user-text">张小三</view>
+				<view class="user-id">ID: 128712937</view>
+				<view class="a-row">
+					<view class="user-text" hover-class="a-hover" hover-stop-propagation="true" catchtap="onTabPress">32<text class="user-tab">粉丝</text></view>
+					<view class="user-text" hover-class="a-hover" hover-stop-propagation="true" catchtap="onTabPress">12<text class="user-tab">关注</text></view>
+					<view class="user-text" hover-class="a-hover" hover-stop-propagation="true" catchtap="onTabPress">65<text class="user-tab">喜欢</text></view>
+				</view>
+			</view>
+			<image class="a-next-icon" src="/res/icon/wnext_ic.png" />
+		</view>
+	</view>
+	<!-- tab -->
+	<view class="tab-box">
+		<view class="tab-view" hover-class="a-btn-hover3">
+			<image class="a-tab-icon" src="/res/icon/huati.png"/>
+			<view class="a-tab-value">话题</view>
+		</view>
+		<view class="tab-view" hover-class="a-btn-hover3">
+			<image class="a-tab-icon" src="/res/icon/huodong.png"/>
+			<view class="a-tab-value">活动</view>
+		</view>
+		<view class="tab-view" hover-class="a-btn-hover3">
+			<image class="a-tab-icon" src="/res/icon/join_ic.png"/>
+			<view class="a-tab-value">随拍</view>
+		</view>
+	</view>
+	<!-- 内容列表 -->
+	<view class="a-column">
+		<block wx:for="{{tablist}}" wx:key="index">
+			<view class="item-box" hover-class="a-btn-hover3" bindtap="onPressItem">
+				<image class="a-item-icon" src="{{item.icon}}"/>
+				<view class="a-item-value" style="flex: 1">{{item.value}}</view>
+				<image class="a-next-icon" src="/res/icon/next_ic.png"/>
+			</view>
+		</block>
+	</view>
+</view>

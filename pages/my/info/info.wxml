@@ -1,0 +1,57 @@
+<!--pages/my/mhome/mhome.wxml-->
+<view class="container">
+	<header title="{{title}}" fixed="{{false}}" background="rgba(255, 255, 255, {{alpha}})" />
+	<!-- 顶部栏 -->
+	<view class="top-bg">
+		<image class="top-bg-img" mode="aspectFill" src="https://cn.bing.com/th?id=OHR.DogDays_ZH-CN8013834742_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4" />
+		<view class="top-layout">
+			<view class="user-box" bindtap="onTabPress">
+				<view hover-class="a-hover">
+					<image class="user-icon" src="https://cn.bing.com/th?id=OHR.NorfolkPups_ZH-CN0794024596_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4" />
+					<view class="user-text">张小三</view>
+				</view>
+				<view style="margin-top: 12rpx">
+					<view class="a-row">
+						<view class="user-text" hover-class="a-hover" catchtap="onTabPress">32<text class="user-tab">粉丝</text></view>
+						<view class="user-text" hover-class="a-hover" catchtap="onTabPress">12<text class="user-tab">关注</text></view>
+						<view class="user-text" hover-class="a-hover" catchtap="onTabPress">65<text class="user-tab">喜欢</text></view>
+					</view>
+				</view>
+			</view>
+			<view class="collect-view" hover-class="a-hover">关注</view>
+		</view>
+	</view>
+
+
+	<!-- tab -->
+	<view class="tab-layout">
+		<block wx:for="{{tabList}}" wx:key="index">
+			<view class="tab-view" bindtap="onChangeTab" data-index="{{index}}">
+				<view class="tab-text{{tabIndex === index ? '':'2'}}">{{item}}</view>
+				<view wx:if="{{tabIndex === index}}" class="tab-line"/>
+			</view>
+		</block>
+	</view>
+	<!-- 内容列表 -->
+	<view class="gridlist">
+		<block wx:for="12345678" wx:key="index">
+			<view class="item-box" bindtap="onPressItem">
+				<view class="item-layout" hover-class="img-hover">
+					<image style="width: 100%; height: 100%; border-radius: 6rpx;" mode="aspectFill" src="https://cn.bing.com/th?id=OHR.DogDays_ZH-CN8013834742_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4" />
+					<view class="item-collect">赞12</view>
+				</view>
+			</view>
+		</block>
+	</view>
+
+	<view class="listview">
+		<block wx:for="12345678" wx:key="index">
+			<view class="big-box">
+				<image class="big-img"/>
+				<view class="item-content">
+
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
